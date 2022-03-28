@@ -3,13 +3,13 @@ body{margin: 0;}
 .wrapper{
   display: grid;
   place-items: center;
-  background-color: purple;
+  background-color: #A6290D;
 }
 
 .wrapper form{
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #F27405;
   border-radius: 5px;
   padding: 2rem;
 }
@@ -22,7 +22,7 @@ input[type="text"], select, button{
 }
 
 .wrapper form > button{
-  background-color: lightblue;
+  background-color: #F2B705;
   border: 0;
   outline: none;
   padding: 1.25rem;

@@ -1,17 +1,26 @@
 
 const Departments = require("../models/Departments");
 
-async function depNames() {
-    const names = await Departments.create(['IT',    
-    'Finance',    
-    'Human Resources',    
-    'Markting',    
-    'Production',    
-    'Research'])
-    
-    console.log(names)
-    return names
-}
+const values = ['IT', 'Finance', 'Human', 'Marketing', 'Production', 'Research']
 
-depNames()
+
+values.forEach(async (value) => {
+    await Departments.destroy({
+        where: {
+            name: value,
+          
+        }
+    }
+    )
+    await Departments.create({
+        name: value
+    }
+    )
+})
+
+
+
+
+
+
 
