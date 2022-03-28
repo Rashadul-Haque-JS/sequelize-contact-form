@@ -1,0 +1,29 @@
+{
+  "name": "sequelize-contact-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rashadul-Haque-JS/sequelize-contact-form.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rashadul-Haque-JS/sequelize-contact-form/issues"
+  },
+  "homepage": "https://github.com/Rashadul-Haque-JS/sequelize-contact-form#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.17.0",
+    "sqlite": "^4.0.25",
+    "sqlite3": "^5.0.2"
+  }
+}
