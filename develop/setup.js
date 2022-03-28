@@ -4,7 +4,7 @@ const Messages = require('../models/Messages')
 
 
 async function devSetup() {
-
+await Departments.drop()
 await Departments.sync()
 await Messages.sync()
     
