@@ -1,8 +1,8 @@
 const Sequelize = require("sequelize")
 
-const sequelize = new Sequelize("seq-test", "user", "password", {
+const sequelize = new Sequelize( {
     dialect: "sqlite",
-    host: "./message.sqlite",
+    storage: "./message.sqlite",
 });
 
 module.exports = sequelize

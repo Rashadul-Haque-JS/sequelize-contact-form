@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require('../modules/prime')
-const Departments = require('./Departments')
+// const Departments = require('./Departments')
 
 
 class Messages extends Model { }
@@ -16,18 +16,16 @@ Messages.init({
 
     email: {
         type: DataTypes.STRING, allowNull: false,
-    },
-    
-    department_id: {
-        type: DataTypes.INTEGER, allowNull: false,
-        
     }
-
+    
 
 }, {
  
     sequelize,
-    modelName: 'messages'
+    modelName: 'messages',
+    logging: false,
+    timestamps:false,
+    underscored: true
 })
 
 module.exports = Messages

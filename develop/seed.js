@@ -8,8 +8,7 @@ values.forEach(async (value) => {
    
     await Departments.create({
         name: value
-    }
-    )
+    })
 })
 
 

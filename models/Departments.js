@@ -11,7 +11,10 @@ Departments.init({
 }, {
 
     sequelize,
-    modelName:'departments'
+    modelName:'departments',
+    logging :false,
+    timestamps:false,
+    underscored: true
 })
 
 module.exports = Departments

@@ -9,6 +9,8 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 
+require('dotenv').config()
+
 const port = process.env.PORT || 8000;
 
 app.use(express.json());
@@ -26,7 +28,7 @@ app.get('/', async (req, res) => {
 app.post("/message", async (req, res) => {
   const { to_department, email, title, content } = req.body;
   mgs = await Messages.create({
-    title, content, email, department_id: to_department
+    title, content, email, department_id:to_department
   });
 
   res.redirect("pages/thanks");
@@ -35,6 +37,7 @@ app.post("/message", async (req, res) => {
 app.get("/pages/thanks", (req, res) => {
   res.render("pages/thanks", { mgs });
 });
+
 
 
 
