@@ -5,10 +5,11 @@ class Departments extends Model {};
 
 Departments.init({
     name: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING,unique:true
     },
 
 }, {
+
     sequelize,
     modelName:'departments'
 })
